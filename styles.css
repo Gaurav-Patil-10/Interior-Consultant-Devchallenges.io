@@ -1,48 +1,226 @@
 :root {
 
-    --crimson-font: 'Crimson Pro', serif;
-    --lora-font: 'Lora', serif;
-    --monterrat-: 'Montserrat', sans-serif;
+  --crimson-font: 'Crimson Pro', serif;
+  --lora-font: 'Lora', serif;
+  --monterrat-: 'Montserrat', sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-h1 {
-    font-family: var(--monterrat-);
+a {
+  text-decoration: none;
 }
 
 @font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-    src: local('Material Icons'),
-      local('MaterialIcons-Regular'),
-      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-  }
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
 
-  .material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+body {
+  background-color: #181719;
+}
+
+.logo {
+  display: flex;
+  width: max-content;
+  text-transform: uppercase;
+  border: 1px solid white;
+  color: white;
+  font-size: 14px;
+  font-family: var(--crimson-font);
+  padding-inline: 8px 9px;
+  padding-block: 8px 7px;
+}
+
+
+
+.header {
+  display: flex;
+  margin-inline: 12px;
+  margin-top: 19px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: none;
+}
+
+.menu-open {
+  color: #F2F2F2;
+  width: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-open i {
+  font-size: 32px;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 12px;
+}
+
+
+.text-content {
+  color: #ffffff;
+  margin-top: 38px;
+  margin-bottom: 37px;
+}
+
+.text-content h1 {
+  font-family: var(--lora-font);
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.text-content p {
+  letter-spacing: 0.1px;
+  font-family: var(--monterrat-);
+  font-weight: 400;
+  font-size: 14px;
+  max-width: 250px;
+  margin-bottom: 25px;
+}
+
+.text-content a {
+  display: flex;
+  font-size: 14px;
+  font-family: var(--monterrat-);
+  font-weight: 700;
+  align-items: center;
+  color: #ffffff;
+  column-gap: 15px;
+}
+
+.text-content a span i {
+  color: #ffffff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.image-container {
+  width: 100%;
+  position: relative;
+}
+
+.image-container-content {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  padding-left: 19px;
+  width: 300px;
+  position: absolute;
+  bottom: -90px;
+  left: 35px;
+  background-color: #181719;
+}
+
+.logo-heading {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  margin-top: 14px;
+}
+
+.logo-heading-content{
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.logo-heading img {
+  width: 38px;
+  border-radius: 50%;
+}
+
+.logo-heading h3 {
+  font-family: var(--monterrat-);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.logo-heading p {
+  font-family: var(--monterrat-);
+  font-weight: 500;
+  font-size: 10px;
+  color: #828282;
   
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
-    font-feature-settings: 'liga';
-  }
+}
+
+.sub-heading{
+  font-family: var(--lora-font);
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  max-width: 210px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  margin-top: 145px;
+
+}
+
+footer h3 {
+  font-family: var(--monterrat-);
+  font-size: 14px;
+  color: #BDBDBD;
+  font-weight: 700;
+}
+
+footer h3 span {
+  text-decoration: underline;
+  color: inherit;
+  font-weight: 700;
+}
