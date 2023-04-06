@@ -1,0 +1,20 @@
+.footer{
+
+    &-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        p{
+            font-family: $monteserrat-font;
+            font-size: 14px;
+            font-weight: 500;
+            color: #A9A9A9;
+
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+}

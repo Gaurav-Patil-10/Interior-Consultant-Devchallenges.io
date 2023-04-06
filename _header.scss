@@ -1,0 +1,157 @@
+@import '_variables.scss';
+
+.header {
+    width: 100%;
+    display: flex;
+    margin-top: 19px;
+
+
+    &_section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        span {
+            color: $primary-white;
+            font-size: 40px;
+        }
+    }
+
+    &_logo {
+        padding-block: 8px 7px;
+        padding-inline: 8px 9px;
+        border: 1px solid $primary-white;
+
+        h1 {
+            font-family: $crimson-font;
+            font-size: 14px;
+            font-weight: 200;
+            text-transform: uppercase;
+            color: $primary-white;
+        }
+
+    }
+
+    .show-menu{
+        right: 0;
+    }
+
+
+
+    @media screen and (max-width:767px) {
+
+        & {
+            padding-inline: 12px;
+        }
+
+        .home_link {
+            font-weight: 700;
+            border-bottom: 2px solid #FFFFFF;
+        }
+
+        &-menu {
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            right: 100rem;
+            width: 100%;
+            height: 100vh;
+            transition: right 0.7s ease-in-out;
+
+            div {
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: center;
+                    background-color: $primary-black;
+                    text-align: center;
+                    height: 100%;
+                    row-gap: 2rem;
+
+                    a {
+                        color: #FFFFFF;
+                        font-family: $monteserrat-font;
+                        font-size: 18px;
+                        font-weight: 500;
+                        padding-bottom: 8px;
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    color: #FFFFFF;
+                    font-size: 40px;
+                    top: 20px;
+                    right: 15px;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:767px) {
+
+        &{
+            padding-inline:30px;
+        }
+
+
+        .header_section{
+            span{
+                display: none;
+            }
+        }
+
+        .home_link {
+            font-weight: 700;
+            border-bottom: 2px solid #FFFFFF;
+        }
+
+        &-menu {
+            
+
+            div {
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: center;
+                    background-color: $primary-black;
+                    text-align: center;
+                    height: 100%;
+                    column-gap: 5.375rem;
+
+                    a {
+                        color: #FFFFFF;
+                        font-family: $monteserrat-font;
+                        font-size: 15px;
+                        font-weight: 500;
+                        padding-bottom: 8px;
+                    }
+                }
+
+                span {
+                   display: none;
+                }
+            }
+        }
+    }
+
+
+    @media screen and (min-width:1024px) {
+        &{
+            margin-top: 42px;
+            padding-inline: 77px;
+        }
+    }
+}
+

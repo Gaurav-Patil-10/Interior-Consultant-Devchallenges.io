@@ -2,17 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interior Consultant</title>
-
-    <!-- css -->
-    <link rel="stylesheet" href="./styles.css">
-
-    <!-- google icons  -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
     <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,58 +14,93 @@
         href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500&family=Montserrat&display=swap"
         rel="stylesheet">
 
+    <!-- css  -->
+    <link rel="stylesheet" href="./globals.css">
+
+    <!-- google icons  -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">
-            this interior
-        </div>
-        <div class="header-menu">
-            <ul>
-                <li><a href="#" class="home">Home</a></li>
-                <li><a href="#" class="collection">Collection</a></li>
-                <li><a href="#" class="about">About</a></li>
-                <li><a href="#" class="contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="header-icons">
-            <div class="menu-open">
-                <i class="material-icons">menu</i>
+        <div class="header_section">
+            <div class="header_logo">
+                <h1>This Interior</h1>
             </div>
+
+            <span class="material-symbols-outlined" id="menu-icon">
+                menu
+            </span>
         </div>
+
+        <div class="header-menu" id="header-menu">
+            <div>
+                <ul>
+                    <li><a href="#" class='home_link'>Home</a></li>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <span class="material-symbols-outlined" id="menu-close">
+                    close
+                </span>
+            </div>
+
+
+        </div>
+
     </header>
-    <main>
-        <div class="text-content">
-            <h1>Modern interior</h1>
-            <p>A full-Service residential & commercial interior design and staging company offering professional
-                organizing & eco-services.</p>
-            <a href="#">Read more <span class="material-symbols-outlined">
-                    trending_flat
-                </span></a>
 
+    <main class="main">
+        <div class="main-text-content">
+            <h1>Modern Interior</h1>
+            <h2>A full-Service residential &</br> commercial interior design and</br> staging company offering</br>
+                professional organizing &</br> eco-services.</h2>
+            <h3>
+                <p>Read more</p><span class="material-symbols-outlined" id="menu-close">
+                    trending_flat
+                </span>
+            </h3>
         </div>
 
-        <div class="image-container">
-            <img src="./photo1.png" alt="interior image">
-            <div class="image-container-content">
-                <div class="logo-heading">
-                    <img src="./photo2.png" alt="person logo">
-                    <div class="logo-heading-content">
-                        <h3>Aliza Webber</h3>
-                        <p>Interior designer</p>
+        <div class="main-image-content">
+
+            <div class="main-image-container">
+                <img src="./photo1.png" alt="image">
+            </div>
+
+            <div class="main-card">
+                <div class="main-card-character">
+                    <div class="main-card-character-image">
+                        <img src="./photo2.png" alt="person image">
+                    </div>
+                    <div class="main-card-character-text">
+                        <h2>Aliza Webber</h2>
+                        <h3>Interior Designer</h3>
                     </div>
                 </div>
-                <div class="sub-heading">
-                    Designed in 2020 by Aliza Webber
+
+                <div class="main-card-text">
+                    <h1>Designed in 2020 by</br> Aliza Webber</h1>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <h3>created by <span>Gaurav-Patil-10</span> - devChallenges.io</h3>
+    <footer class="footer">
+        <div class="footer-container">
+         <p>
+            created by <span>Gaurav-patil-10</span> - devChallenges.io
+         </p>   
+        </div>
+       
     </footer>
+
+
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

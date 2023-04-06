@@ -1,0 +1,173 @@
+@import "_variables.scss";
+
+.main {
+    width: 100%;
+    position: relative;
+    padding-inline: 12px;
+
+    @media screen and (min-width:767px) {
+
+        &{
+            padding-inline:30px;
+        }
+        
+    }
+
+    @media screen and (min-width:1024px) {
+
+        &{
+            padding-inline:77px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 170px;
+            column-gap: 139px;
+        }
+
+        .main-image-content{
+            max-width: 777px;
+        }
+        
+    }
+
+    &-text-content {
+
+        margin-block: 38px;
+
+        h1 {
+            font-family: $lora-font;
+            font-weight: 500;
+            font-size: 36px;
+            color: $primary-white;
+
+            @media screen and (min-width:1024px) {
+                &{
+                    font-size: 48px;
+                }
+            }
+        }
+
+
+        h2 {
+            font-family: $monteserrat-font;
+            font-weight: 400;
+            font-size: 14px;
+            color: $primary-white;
+            margin-block: 25px;
+
+            @media screen and (min-width:1024px) {
+                &{
+                    font-size: 24px;
+                }
+            }
+        }
+
+        h3 {
+            display: flex;
+            align-items: center;
+            column-gap: 0.5rem;
+
+            p {
+                font-family: $monteserrat-font;
+                font-weight: 700;
+                font-size: 14px;
+                color: $primary-white;
+
+                @media screen and (min-width:1024px) {
+                    &{
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            span {
+                color: $primary-white;
+                font-weight: 700;
+            }
+        }
+
+
+    }
+
+    &-image-content {
+        width: fit-content;
+        position: relative;
+        height: max-content;
+        margin-bottom: 9.5rem;
+
+        
+
+        .main-card {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            background-color: $primary-black;
+            width: 300px;
+            padding-bottom: 25px;
+            padding-left: 19px;
+            padding-top: 13px;
+            position: absolute;
+            bottom: -83px;
+            right: 12px;
+            box-shadow: 0 4px 4px 0 #000000;
+
+            @media screen and (min-width:1024px) {
+                &{
+                    width: 410px;
+                    padding-bottom: 25px;
+                    padding-left: 26px;
+                    padding-top: 23px;
+                }
+            }
+
+            &-text{
+
+                h1{
+                    font-family: $lora-font;
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: $primary-white;
+                }
+                
+            }
+
+            &-character {
+
+                display: flex;
+                column-gap: 11px;
+                align-items: center;
+
+                &-text {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 4px;
+
+                    h2{
+                        font-family: $monteserrat-font;
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: #FFFFFF;
+                    }
+
+                    h3{
+                        font-family: $monteserrat-font;
+                        font-weight: 500;
+                        font-size: 10px;
+                        color: #828282;
+                    }
+
+
+                    
+                }
+
+                &-image {
+                    width: 36px;
+
+                    img {
+                        border-radius: 50%;
+                    }
+
+                }
+            }
+        }
+    }
+}
